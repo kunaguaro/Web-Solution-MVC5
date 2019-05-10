@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <h1>Ejemplo para MVC</h1>
+    <p class="lead">Se usa: Onion Architecture, Fluentvalidation, JqueryDatatables, Custom Theme, Custom Menu, Custom Table Sweetalert2</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Bootstrap Adicionales</h2>
+        <p>Ejemplo de plugins adicionales</p>
+
+        @Html.ActionLink("Ir a demo", "Contact", "Home")
+    </div>
+    <div class="col-md-4">
+        <h2>Tabla con JQuery</h2>
+        <p>Tabla con jquery datatables, action links e idioma</p>
+       
+        @Html.ActionLink("Paises Lista JQuery", "ListaJquery", "Countries")
+    </div>
+   
+</div>

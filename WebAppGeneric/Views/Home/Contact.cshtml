@@ -1,0 +1,257 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>Plugins</h2>
+<input type="button" class="btn btn-primary" onclick="return validateData();" value="SweetAlert2" />
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCart">Launch modal</button>
+<div class="text-center">
+    <button type="button" class="btn " data-toggle="modal" data-target="#myModal">
+        Left Sidebar Modal
+    </button>
+
+    <button type="button" class="btn " data-toggle="modal" data-target="#myModal2">
+        Right Sidebar Modal
+    </button>
+</div>
+
+<!------------------  side modals ---------------------------->
+<div class="container demo">
+
+
+
+
+    <!-- Modal -->
+    <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Left Sidebar</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </p>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Modal -->
+    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">Right Sidebar</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </p>
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+</div><!-- container -->
+<!------------------  side modals ---------------------------->
+<!-- Button trigger modal-->
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>https://mdbootstrap.com/docs/jquery/forms/basic/</td>
+                            <td>100$</td>
+                            <td><a><i class="fas fa-times"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Product 2</td>
+                            <td>100$</td>
+                            <td><a><i class="fas fa-times"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Product 3</td>
+                            <td>100$</td>
+                            <td><a><i class="fas fa-times"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Product 4</td>
+                            <td>100$</td>
+                            <td><a><i class="fas fa-times"></i></a></td>
+                        </tr>
+                        <tr class="total">
+                            <th scope="row">5</th>
+                            <td>Total</td>
+                            <td>400$</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Ejemplo tabla modal -->
+
+
+<div class="container" id="no-more-tables">
+    <p>&nbsp;</p>
+    <table class="table table-hover">
+        <thead>
+            <tr class="active">
+
+                <th class="col-xs-2"><strong>WO Ref</strong></th>
+                <th class="col-xs-2"><strong>Reported</strong></th>
+                <th class="col-xs-6"><strong>Type</strong></th>
+                <th class="col-xs-2"><strong>Completed</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr role="button" data-toggle="collapse" href="#demo1" aria-expanded="false" aria-controls="demo1">
+
+                <td data-title="WO Ref"><span class="caret"></span>&nbsp12345</td>
+                <td data-title="Reported">12/05/2015</td>
+                <td data-title="Type">A plumbing job</td>
+                <td data-title="Completed">01/06/2015</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="hiddenRow">
+                    <div class="collapse" id="demo1">
+                        <table class="table table-nested">
+                            <tbody>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active"><strong>Description</strong></td>
+                                    <td>07777 123456 ferroli flashing fault 37 no htg or hot water gas boiler no alt form of hot water</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active"><strong>Action taken</strong></td>
+                                    <td>
+                                        The work was completed by the contractor on 04-FEB-2013
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active"><strong>Contractor name</strong></td>
+                                    <td>
+                                        PMD North West
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active" rowspan="2"><strong>Job lines</strong></td>
+                                    <td>
+                                        1. Gutter:Clean/Flush Out(Per Elev) Gutter
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2. Inspection:Provide/Erect Ladder Inspection
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr role="button" data-toggle="collapse" href="#demo2" aria-expanded="false" aria-controls="demo2">
+
+                <td data-title="WO Ref"><span class="caret"></span>&nbsp67890</td>
+                <td data-title="Reported">20/04/2015</td>
+                <td data-title="Type">An electrical job</td>
+                <td data-title="Completed">01/05/2015</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="hiddenRow">
+                    <div class="collapse" id="demo2">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active"><strong>Description</strong></td>
+                                    <td>07777 123456 ferroli flashing fault 37 no htg or hot water gas boiler no alt form of hot water</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active"><strong>Action taken</strong></td>
+                                    <td>
+                                        The work was completed by the contractor on 04-FEB-2013
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active"><strong>Contractor name</strong></td>
+                                    <td>
+                                        PMD North West
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4 col-sm-2 active" rowspan="2"><strong>Job lines</strong></td>
+                                    <td>
+                                        1. Gutter:Clean/Flush Out(Per Elev) Gutter
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2. Inspection:Provide/Erect Ladder Inspection
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<script type="text/javascript">
+    function validateData() {
+        Swal.fire({
+            type: 'error',
+            title: 'Oops...',
+            text: 'https://sweetalert2.github.io/#input-types',
+            footer: '<a href>Why do I have this issue?</a>'
+        })
+    }
+</script>  
